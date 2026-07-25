@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعم الفني - ساموراي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header fade-in">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>ساموراي <span class="icon">⚔️</span></h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" style="text-decoration: none;">
+                    <button class="nav-btn">الرئيسية</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container fade-in-up">
+        <div class="card" style="padding: 3rem; margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <h2 class="section-title">الدعم الفني وخدمة العملاء</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">تواجه مشكلة في طلبك؟ أو لديك اقتراح؟ نحن هنا في خدمتك على مدار الساعة.</p>
+            
+            <form class="standard-form" onsubmit="event.preventDefault(); alert('تم إرسال رسالتك! سيقوم فريق الدعم بالتواصل معك قريباً.'); this.reset();">
+                <div class="form-group">
+                    <label>رقم الطلب (اختياري)</label>
+                    <input type="text" placeholder="مثال: ORD-123456">
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>موضوع الرسالة</label>
+                    <select required>
+                        <option value="complaint">شكوى بخصوص طلب</option>
+                        <option value="suggestion">اقتراح لتطوير التطبيق</option>
+                        <option value="other">استفسار عام</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>تفاصيل الرسالة</label>
+                    <textarea required placeholder="اكتب تفاصيل مشكلتك هنا..." style="height: 120px; font-family: inherit; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn primary full-width pulse-on-hover" style="margin-top: 1rem;">إرسال الرسالة</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">ساموراي ⚔️</h3>
+                    <p class="footer-desc">أسرع تطبيق توصيل في المملكة. نلبيك بسرعة الساموراي، وين ما كنت ووقت ما تحب.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-subtitle">روابط هامة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="partner.html">انضم كشريك</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-subtitle">تواصل معنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:samurai@samurai-app.com">samurai@samurai-app.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2026 تطبيق ساموراي</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
