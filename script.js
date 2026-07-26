@@ -1,14 +1,14 @@
 /* ==== LOCAL DATABASE SIMULATION ==== */
 
 // Initialize LocalStorage if empty or empty array
+localStorage.removeItem('fastswords_users');
 let existingUsers = localStorage.getItem('fastswords_users');
 if (!existingUsers || JSON.parse(existingUsers).length === 0) {
     const fakeUsers = [
-        { id: 'usr_1', name: 'أحمد عبدالله', email: 'ahmed@example.com', password: '123' },
-        { id: 'usr_2', name: 'سارة خالد', email: 'sara@example.com', password: '123' },
-        { id: 'usr_3', name: 'محمد فهد', email: 'mohamed@example.com', password: '123' },
-        { id: 'usr_4', name: 'نورة الدوسري', email: 'noura@example.com', password: '123' },
-        { id: 'usr_5', name: 'فيصل المطيري', email: 'faisal@example.com', password: '123' }
+        { id: 'usr_1', name: 'براءة عبدالمنعم', email: 'baraa@example.com', password: '123' },
+        { id: 'usr_2', name: 'عبدالله سليم', email: 'abdullah.s@example.com', password: '123' },
+        { id: 'usr_3', name: 'عبدالله مندور', email: 'abdullah.m@example.com', password: '123' },
+        { id: 'usr_4', name: 'احمد عيسى', email: 'ahmed.i@example.com', password: '123' }
     ];
     localStorage.setItem('fastswords_users', JSON.stringify(fakeUsers));
 }
